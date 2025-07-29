@@ -1,0 +1,30 @@
+# Settings
+_subdirectory: template
+
+# Questions
+author_name:
+  type: str
+  help: What is the author name?
+
+name:
+  type: str
+  help: What is the project name?
+
+description:
+  type: str
+  help: What is the project description?
+  placeholder: This project does this and that
+
+base_image:
+  type: str
+  help: Select the Docker base image
+  choices:
+    - python:3.13.7-slim-bookworm
+    - infra/py313-slim-bookworm:3.13.5
+
+ci_image:
+  type: str
+  help: What was the project Docker ci image?
+  choices:
+  choices:
+    "No ci images available yet": "ci/py313-slim-bookworm"  # label -> value
